@@ -8,7 +8,9 @@
  * 日期: 2019-06-08T15:27Z
  */
 define("__hsuan_view_token__",md5(uniqid(rand(), true)));
-function getToken(){
-  return md5(uniqid(rand(), true));
+if(!function_exists('getToken')){
+  function getToken(){
+    return md5(uniqid(rand(), true));
+  }
 }
 ?>
